@@ -10,7 +10,8 @@ namespace Inventario.COMMON.Interfaces
     public interface IRepositorio<T> where T:Base // donde T hereda de clase
     {
         bool Create(T entidad);
-        bool Update(String id, T entidadModificada);
+        // bool Update(String id, T entidadModificada);
+        bool Update( T entidadModificada);
         bool Delete(T entidad);
 
         List<T> Read { get; }
